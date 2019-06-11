@@ -1,0 +1,12 @@
+<form action="login" method="post">
+<table>
+<tr>
+<th align="left"></th><td></td>
+<th align="left"></th><td></td>
+<th align="left"></th><td></td>
+</tr>
+MailId <input type="text" name="mailId"><br/>
+Password <input type="password" name="password"><br/>
+<input type="submit" value="Login" />
+</table>
+</form>
