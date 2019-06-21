@@ -1,14 +1,28 @@
 package com.biswa.admin.controller;
 
+import java.util.ArrayList;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.biswa.admin.bean.User;
 @RestController
 public class AdminController {
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	public ModelAndView emp() {
-		ModelAndView mv=new ModelAndView("admin");
+	public ArrayList<User> admin() {
+		System.out.println("----Admin-----");
+		ArrayList<User> al=new ArrayList<>();
+		al.add(new User(1,"Biswa","bbsr"));
+		al.add(new User(2,"ssasa","hh"));
+		al.add(new User(3,"Bisasaswa","rrtrt"));
+		al.add(new User(4,"Bissssswa","rrer"));
+		return al;
+	}
+	@RequestMapping(value="/hello", method= RequestMethod.GET)
+	public ModelAndView showMessage() {
+		ModelAndView mv=new ModelAndView();
+		mv.addObject("abc");
 		return mv;
 	}
 }

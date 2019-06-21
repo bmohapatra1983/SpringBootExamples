@@ -1,4 +1,0 @@
-server.port=2019
-#ViewResolver Properties
-spring.mvc.view.prefix= /pages/
-spring.mvc.view.suffix=.jsp
