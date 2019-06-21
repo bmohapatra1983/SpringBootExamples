@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="Person1")
 @Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
-//@GenericGenerator(name="g1",strategy="increment")
+@GenericGenerator(name="g1",strategy="increment")
 public class Person {
 	@Id
 	@GeneratedValue(generator="g1")
