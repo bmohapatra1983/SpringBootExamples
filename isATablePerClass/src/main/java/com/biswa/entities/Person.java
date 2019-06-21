@@ -1,5 +1,7 @@
 package com.biswa.entities;
-
+/*
+ Author : Biswaranjan Mohapatra
+ */
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
