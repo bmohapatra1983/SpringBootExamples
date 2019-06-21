@@ -14,6 +14,7 @@ import javax.persistence.*;
 public class Person {
 	@Id
 	@GeneratedValue(generator="g1")
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String name;
 	
