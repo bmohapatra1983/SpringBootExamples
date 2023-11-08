@@ -33,7 +33,7 @@
   	 <dependency>
   		<groupId>org.apache.tomcat</groupId>
     	<artifactId>tomcat-jasper</artifactId>
-    	<version>8.5.13</version>
+    	<version>8.5.94</version>
   	</dependency>
   </dependencies>
 </project>
